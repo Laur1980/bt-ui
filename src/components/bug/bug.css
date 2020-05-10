@@ -1,0 +1,86 @@
+.bug-container {
+  position: relative;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  order: 3;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5rem;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 2px 2px #a5a5a5;
+}
+
+.buttons-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: inherit;
+}
+
+.button-wrapper {
+  padding: 10px;
+}
+
+.button-wrapper .btn-danger {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 7px 20px;
+  box-shadow: 1px 1px #800101;
+}
+
+.button-wrapper .btn-danger:hover {
+  background-color: rgb(252, 96, 96);
+}
+
+.button-wrapper .btn-status-open {
+  background-color: #0052cc;
+  color: white;
+  border: 1px solid #0052cc;
+  border-radius: 3px;
+  padding: 7px 20px;
+  box-shadow: 1px 1px #013788;
+}
+
+.button-wrapper .btn-warning {
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  border: 1px solid orange;
+  border-radius: 3px;
+  padding: 7px 20px;
+  box-shadow: 1px 1px rgb(143, 93, 1);
+}
+
+.button-wrapper .btn-warning:hover {
+  background-color: rgb(248, 198, 104);
+}
+
+.status-container {
+  padding: 10px;
+}
+
+.bug-title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.bug-text-body {
+  margin-bottom: 0.75rem;
+}

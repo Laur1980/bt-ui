@@ -1,0 +1,12 @@
+{
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.format.enable": true,
+  "eslint.onIgnoredFiles": "warn",
+  "eslint.options": {
+    "eslint.format.enable": true
+},
+"eslint.run": "onSave",
+"less.completion.completePropertyWithSemicolon": false
+}

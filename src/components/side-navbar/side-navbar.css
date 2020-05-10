@@ -1,0 +1,43 @@
+.side-navbar-container {
+  display: flex;
+  margin-right: 250px;
+  background-color: rgb(255, 4, 4);
+  text-align: center;
+  margin: 0px;
+  width: 100%;
+}
+
+.side-navbar-container ul {
+  display: inherit;
+  flex-direction: row !important;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.side-navbar-container li {
+  padding: 20px;
+}
+
+.side-navbar-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.side-navbar-container a:hover,
+.side-navbar-container a:active {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(255, 4, 4) !important;
+}
+
+.navbar-container li:hover {
+  /* cursor: pointer; */
+  background-color: white;
+  color: rgb(255, 4, 4);
+}
+
+.selected {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(255, 4, 4) !important;
+}

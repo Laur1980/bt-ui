@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SideNavbar from './components/side-navbar/side-navbar.component';
+import Bugs  from './components/bugs/bugs.component';
+import AddBug from './components/add-bug/add-bug.component';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <React.Fragment>
+        <SideNavbar />
+        <Switch>
+          <Route path='/' exact component={Bugs} />
+          <Route path='/add_bug' exact component={AddBug} />
+          <Route path='/update_bug/:id' exact component={AddBug} />
+        </Switch>
+      </React.Fragment>
+    </Router>
   );
 }
 
